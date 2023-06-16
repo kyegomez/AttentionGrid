@@ -93,3 +93,9 @@ Attention mechanisms have transformed AI, enabling machines to 'focus' on signif
 * [Integrate dynamic sparse flash attention](https://github.com/epfml/dynamic-sparse-flash-attention)
 
 * Integrate cross attention from imagebind
+
+* Integrate COLT-5 Attention
+
+* Integrate multi-query attention 
+
+* Integrate wrappers from lucid rains x_transformers, decoder, attention, encoder, transformer wrapper
