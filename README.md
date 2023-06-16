@@ -91,3 +91,5 @@ Attention mechanisms have transformed AI, enabling machines to 'focus' on signif
 * Integrate blockwise parallel attention
 
 * [Integrate dynamic sparse flash attention](https://github.com/epfml/dynamic-sparse-flash-attention)
+
+* Integrate cross attention from imagebind
