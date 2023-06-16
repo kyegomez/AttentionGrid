@@ -1,6 +1,6 @@
 # AttentionGrid: Unleashing Attention Power in AI Models 🚀
+AttentionGrid is a cutting-edge framework designed to democratize the incorporation of advanced attention mechanisms into AI models. Powered by the latest developments in attention-based transformer models, AttentionGrid opens up the world of attention mechanisms to machine learning practitioners, researchers, and enthusiasts alike.  
 
-## Usage 💡
 
 ## Getting Started: Installation 🚀
 
@@ -18,8 +18,6 @@ from AttentionGrid.attentions import MultiHeadAttention
 
 # Initialize your classes and use them as required
 ```
-
-AttentionGrid is a cutting-edge framework designed to democratize the incorporation of advanced attention mechanisms into AI models. Powered by the latest developments in attention-based transformer models, AttentionGrid opens up the world of attention mechanisms to machine learning practitioners, researchers, and enthusiasts alike.  
 
 ## Spread the Word 📣
 
