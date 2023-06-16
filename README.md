@@ -79,3 +79,15 @@ AttentionGrid is proudly open-source software, licensed under the APACHE License
 Attention mechanisms have transformed AI, enabling machines to 'focus' on significant parts of input data. With AttentionGrid, we aim to democratize access to these powerful tools. We believe that the future of AI lies in the power of attention, and through AttentionGrid, we hope to accelerate this journey. Explore our repository, join our cause, and let's navigate this exciting landscape together!
 
 > "The details are not the details. They make the design." - Charles Eames
+
+
+
+# Roadmap
+
+* Integrate Flash Attention, and variants
+
+* Integrate landmark attention
+
+* Integrate blockwise parallel attention
+
+* [Integrate dynamic sparse flash attention](https://github.com/epfml/dynamic-sparse-flash-attention)
