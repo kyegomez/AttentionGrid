@@ -1,8 +1,5 @@
 # Benchmarking and Evaluating Attention Mechanisms in Neural Networks
 
-**Date:** 17th June 2023  
-**Authors:** AI Research Team  
-
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Attention Mechanisms](#attention-mechanisms)
