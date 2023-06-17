@@ -1,7 +1,7 @@
 # Agora
 ![Agora Banner](agora-banner.png)
 
-AttentionGrid is brought to you by Agora, we're an all-new open source multi-modal AI research organization and we're devoted to advancing Humanity.
+AttentionGrid is brought to you by Agora, we're an all-new open source multi-modal AI research organization devoted to advancing Humanity.
 
 [Join us Here to contribute to this project or recieve support!](https://discord.gg/qUtxnK2NMf)
 
