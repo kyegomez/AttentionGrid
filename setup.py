@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
   name = 'AttentionGrid',
   packages = find_packages(exclude=['examples']),
-  version = '1.16.9',
+  version = '0.0.1',
   license='APACHE',
   description = 'AttentionGrid, torch, jax, triton',
   author = 'Phil Wang',
