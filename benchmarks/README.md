@@ -50,7 +50,7 @@ Several metrics can be used to evaluate the effectiveness of attention mechanism
 
 
 
-These following metrics could be important as well
+These following metrics are critical as well:
 
 * Forward Time: The time it takes to run the forward pass of the attention mechanism.
 
@@ -84,8 +84,6 @@ To measure the metrics mentioned above, the following tests can be conducted:
 
 ## References <a name="references"></a>
 
-1. Vas
-
-wani, A., et al. "Attention is All you Need." Advances in Neural Information Processing Systems. 2017.
+1. Vas wani, A., et al. "Attention is All you Need." Advances in Neural Information Processing Systems. 2017.
 2. Bahdanau, D., et al. "Neural Machine Translation by Jointly Learning to Align and Translate." arXiv preprint arXiv:1409.0473. 2014.
 3. Jiang, M., et al. "To What Extent Do Different Attention Mechanisms Agree?" Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP). 2019.
