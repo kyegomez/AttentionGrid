@@ -1,4 +1,12 @@
+# Agora
+AttentionGrid is brought to you by Agora, we're an all-new open source multi-modal AI research organization and we're devoted to advancing Humanity.
+
+[Join us Here to contribute to this project or recieve support!](https://discord.gg/qUtxnK2NMf)
+
 # AttentionGrid: Unleashing Attention Power in AI Models 🚀
+
+![AttentionGrid Image](attention-grid.png)
+
 AttentionGrid is a cutting-edge framework designed to democratize the incorporation of advanced attention mechanisms into AI models. Powered by the latest developments in attention-based transformer models, AttentionGrid opens up the world of attention mechanisms to machine learning practitioners, researchers, and enthusiasts alike.  
 
 
