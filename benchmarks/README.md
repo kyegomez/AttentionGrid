@@ -82,7 +82,7 @@ To measure the metrics mentioned above, the following tests can be conducted:
 
 ---
 
-## References <a name="references"></a>
+## References
 
 1. Vas wani, A., et al. "Attention is All you Need." Advances in Neural Information Processing Systems. 2017.
 2. Bahdanau, D., et al. "Neural Machine Translation by Jointly Learning to Align and Translate." arXiv preprint arXiv:1409.0473. 2014.
