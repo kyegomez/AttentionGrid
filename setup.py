@@ -5,7 +5,7 @@ setup(
   packages = find_packages(exclude=['examples']),
   version = '0.0.1',
   license='APACHE',
-  description = 'AttentionGrid, a foundational library for attention mechanisms',
+  description = 'AttentionGrid - Library',
   author = 'Phil Wang',
   author_email = 'kye@apac.ai',
   url = 'https://github.com/kyegomez/AttentionGrid',
