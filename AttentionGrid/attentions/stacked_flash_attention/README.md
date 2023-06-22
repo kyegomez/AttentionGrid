@@ -1,3 +1,1 @@
-# Stacked Flash Attention with Alibi, qknorm, 1 query write head and other techniques
-
-
+# Stacked Flash MultiHead Attention Attention with Alibi, qknorm, 1 query write head and other techniques sub layer norm, xpos with Multiway 
