@@ -45,6 +45,8 @@ position_ids = jnp.arange(100).reshape(1, 100)
 output = bpjax.forward(hidden_states, attention_mask, position_ids)
 ```
 
+## Vast Arrays of Attentions
+
 ## Spread the Word 📣
 
 We encourage you to share AttentionGrid with your community! Here are quick share links for several social media platforms:
@@ -130,6 +132,26 @@ Attention mechanisms have transformed AI, enabling machines to 'focus' on signif
 
 
 # Documentation
+
+
+### Vast Arrays of Attentions
+
+| Mechanism                       | Calling Method                                                                                    | Example Import                                          |
+| ------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| Self-Attention                  | `from AttentionGrid import SelfAttention`                                                         | `from AttentionGrid import SelfAttention`                |
+| Global Attention                | `from AttentionGrid import GlobalAttention`                                                       | `from AttentionGrid import GlobalAttention`              |
+| Local Attention                 | `from AttentionGrid import LocalAttention`                                                        | `from AttentionGrid import LocalAttention`               |
+| Hierarchical Attention          | `from AttentionGrid import HierarchicalAttention`                                                 | `from AttentionGrid import HierarchicalAttention`        |
+| Dynamic Sparse Attention        | `from AttentionGrid import dynamic_sparse_attention`                                              | `from AttentionGrid import dynamic_sparse_attention`     |
+| Compact Function                | `from AttentionGrid import compact`                                                               | `from AttentionGrid import compact`                      |
+| Pad Index Function              | `from AttentionGrid import pad_index`                                                             | `from AttentionGrid import pad_index`                    |
+| Blockwise Parallel Attention    | `from AttentionGrid import BlockwiseParallelJax`                                                  | `from AttentionGrid import BlockwiseParallelJax`         |
+| Flash Attention                 | `from AttentionGrid import FlashAttention`                                                        | `from AttentionGrid import FlashAttention`               |
+| Landmark Attention              | `from AttentionGrid import LandmarkAttention`                                                     | `from AttentionGrid import LandmarkAttention`            |
+| COLT-5 Attention                | `from AttentionGrid import Colt5Attention`                                                        | `from AttentionGrid import Colt5Attention`               |
+| Multi-Query Attention           | `from AttentionGrid import MultiQueryAttention`                                                   | `from AttentionGrid import MultiQueryAttention`          |
+| Dilated Attention               | `from AttentionGrid import DilatedAttention`                                                      | `from AttentionGrid import DilatedAttention`             |
+
 
 ## Dynamic Sparse Attention
 
