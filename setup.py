@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
   name = 'AttentionGrid',
   packages = find_packages(exclude=['examples']),
-  version = '0.0.1',
+  version = '0.0.2',
   license='APACHE',
   description = 'AttentionGrid - Library',
   author = 'Phil Wang',
@@ -27,7 +27,7 @@ setup(
     'Development Status :: 4 - Beta',
     'Intended Audience :: Developers',
     'Topic :: Scientific/Engineering :: Artificial Intelligence',
-    'License :: OSI Approved :: APACHE License',
+    'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3.6',
   ],
 )
