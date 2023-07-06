@@ -325,7 +325,7 @@ The following example demonstrates how to use the `BlockwiseParallelJax` class.
 
 from jax import random
 import jax.numpy as jnp
-from agora_ai_transformer.models import BlockwiseParallelJax
+from AttentionGrid import BlockwiseParallelJax
 
 # Initialize transformer block
 block = BlockwiseParallelJax(
@@ -418,7 +418,7 @@ Here is a basic example of how to use `fused_landmark_attention` function.
 
 ```python
 import torch
-from your_module import fused_landmark_attention
+from AttentionGrid import fused_landmark_attention
 
 # Initialize some tensors
 batch = 8
