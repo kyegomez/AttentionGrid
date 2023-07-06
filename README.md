@@ -442,4 +442,64 @@ This example first initializes some tensors to serve as the queries, keys
 
 
 
-## Torchscale
+## LongNet
+
+```python
+import torch
+import torch.nn as nn
+from AttentionGrid import DilatedAttention
+
+# Replace this with your correct GPU device
+device = "cuda:0"
+dtype = torch.float16
+
+# Create an instance of DilatedAttention
+d_model = 512
+num_heads = 8
+dilation_rate = 2
+segment_size = 64
+dropout = 0.2  # Specify the dropout rate
+attention = DilatedAttention(
+    d_model=d_model,
+    num_heads=num_heads,
+    dilation_rate=dilation_rate,
+    segment_size=segment_size,
+    dropout=dropout,
+).to(device, dtype=dtype)
+
+# Create some dummy input data
+batch_size = 16
+seq_len = 128
+input_dim = d_model
+inputs = torch.randn(batch_size, seq_len, input_dim, device=device, dtype=dtype)
+
+# Forward pass
+outputs = attention(inputs)
+
+# Print the output shape
+print(outputs.shape)  # Expected: [batch_size, seq_len, d_model]
+```
+
+In the example above, we create an instance of the `DilatedAttention` class with the specified hyperparameters. We then generate some dummy input data and pass it through the attention mechanism to obtain the outputs. Finally, we print the shape of the output tensor.
+
+## DilatedAttention Documentation
+
+The `DilatedAttention` class implements dilated attention, which expands the attentive field exponentially as the distance between tokens grows. It inherits from `torch.nn.Module` and can be used as a drop-in replacement for standard attention mechanisms in Transformer models.
+
+### Parameters
+
+- `d_model` (int): The dimensionality of the input and output embeddings.
+- `num_heads` (int): The number of attention heads.
+- `dilation_rate` (int): The dilation rate for sparsifying the input sequence.
+- `segment_size` (int): The size of each segment after sparsification.
+- `dropout` (float, optional): The dropout probability to apply to the attention output. Default: 0.0 (no dropout).
+
+### Inputs
+
+- `x` (Tensor): The input tensor of shape `(batch_size, seq_len, d_model)`.
+
+### Outputs
+
+- `output` (Tensor): The output tensor of shape `(batch_size, seq_len, d_model)`.
+
+Please note that the input tensor should be on the correct device (e.g., GPU) and have the appropriate data type (`dtype`).
