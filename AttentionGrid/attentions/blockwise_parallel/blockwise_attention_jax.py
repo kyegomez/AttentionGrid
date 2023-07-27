@@ -1,15 +1,13 @@
 import functools
-import json
-import math
 from functools import partial
-from typing import Callable, NamedTuple, Optional
+from typing import NamedTuple, Optional
 
 import flax.linen as nn
 import jax
 import jax.numpy as jnp
 import numpy as np
 from einops import rearrange
-from flax.linen import combine_masks, make_causal_mask
+from flax.linen import combine_masks
 from jax import lax
 from jax import numpy as jnp
 

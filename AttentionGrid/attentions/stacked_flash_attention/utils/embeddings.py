@@ -4,8 +4,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from einops import rearrange, repeat, reduce
-import numpy as np
+from einops import rearrange
 
 import math
 import torch.nn.functional as F

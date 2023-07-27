@@ -1,6 +1,5 @@
 import torch 
 import torch.nn as nn
-import torch.nn.functional as F
 from flash_attn.flash_attention import FlashMHA
 
 # Replace this with your correct GPU device

@@ -1,10 +1,7 @@
 import math
-import numpy as np
-import pytest
 import torch
 import triton
 import triton.language as tl
-import matplotlib.pyplot as plt
 
 @triton.jit
 def _fwd_kernel_hash(
@@ -891,11 +888,13 @@ def sparse_attn(num_buckets_or_sparsity, n_ctx, mode='fwd'):
     if isinstance(num_buckets_or_sparsity, int): # hash mode
         q_hash = torch.randint(0, num_buckets_or_sparsity, (BATCH, n_ctx, H), dtype=torch.int32, device="cuda")
         k_hash = torch.randint(0, num_buckets_or_sparsity, (BATCH, n_ctx, H), dtype=torch.int32, device="cuda")
-        fn = lambda: dynamic_sparse_attention(q, k, v, q_hash, k_hash, sm_scale=1.0/math.sqrt(q.size(-1)), sparsity_mode='hash')
+        def fn():
+            return dynamic_sparse_attention(q, k, v, q_hash, k_hash, sm_scale=1.0 / math.sqrt(q.size(-1)), sparsity_mode="hash")
     else: # qk mode
         q_keep = (torch.rand((BATCH, n_ctx, H), dtype=torch.bfloat16, device="cuda") > num_buckets_or_sparsity).float()
         k_keep = (torch.rand((BATCH, n_ctx, H), dtype=torch.bfloat16, device="cuda") > num_buckets_or_sparsity).float()
-        fn = lambda: dynamic_sparse_attention(q, k, v, q_keep, k_keep, sm_scale=1.0/math.sqrt(q.size(-1)), sparsity_mode='qk')
+        def fn():
+            return dynamic_sparse_attention(q, k, v, q_keep, k_keep, sm_scale=1.0 / math.sqrt(q.size(-1)), sparsity_mode="qk")
 
     if mode == 'fwd':
         return fn()
@@ -910,7 +909,8 @@ def sparse_attn(num_buckets_or_sparsity, n_ctx, mode='fwd'):
     
 def flash_attn(n_ctx, mode='fwd'):
     q, k, v = get_tensors(BATCH, H, n_ctx, D_HEAD)
-    fn = lambda: flashattention(q, k, v)
+    def fn():
+        return flashattention(q, k, v)
 
     if mode == 'fwd':
         return fn()
